@@ -15,6 +15,13 @@ export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
+  const scrollToTop = () => {
+    if (typeof window === "undefined") return;
+    const reduce =
+      window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches ?? false;
+    window.scrollTo({ top: 0, left: 0, behavior: reduce ? "auto" : "smooth" });
+  };
+
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 60);
     window.addEventListener("scroll", onScroll);
@@ -39,7 +46,12 @@ export default function Nav() {
         <Link
           href="#home"
           className="flex items-center gap-2 text-ink no-underline group min-h-[44px] min-w-[44px] items-center justify-start"
-          onClick={() => setMobileOpen(false)}
+          onClick={(e) => {
+            // Keep href for fallback/deep-linking, but force a consistent "back to top".
+            e.preventDefault();
+            setMobileOpen(false);
+            scrollToTop();
+          }}
         >
           <span className="text-accent transition-transform group-hover:scale-110">
             <LogoIcon className="w-5 h-5 sm:w-6 sm:h-6" />

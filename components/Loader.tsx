@@ -64,44 +64,31 @@ export default function Loader() {
       }`}
       aria-hidden
     >
-      <div className="px-6 max-w-[90vw] overflow-x-auto">
-        <div className="flex items-center gap-3 md:gap-4">
+      <div className="w-full px-4 sm:px-6">
+        <div className="mx-auto w-full max-w-[980px] flex items-center justify-center gap-3 sm:gap-4">
           <span className="text-accent shrink-0" aria-hidden>
-            <LogoIcon className="w-8 h-8 md:w-10 md:h-10" />
+            <LogoIcon className="w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10" />
           </span>
-          <div className="flex items-baseline flex-wrap gap-0 text-lg md:text-xl">
-          <span
-            className="text-muted"
+          <div
+            className="flex flex-wrap items-baseline justify-center gap-x-1 gap-y-1 text-xs sm:text-sm md:text-base leading-tight text-center min-w-0"
             style={{ fontFamily: "var(--font-loader-mono), ui-monospace, monospace" }}
           >
-            {codePart}
-          </span>
-          <span
-            className="text-3xl md:text-4xl font-medium tracking-tight text-ink"
-            style={{ fontFamily: "var(--font-loader-mono), ui-monospace, monospace" }}
-          >
-            {logoPart}
-          </span>
-          {showSuffix && (
-            <span
-              className="text-3xl md:text-4xl font-medium tracking-tight text-accent animate-loaderFadeIn"
-              style={{ fontFamily: "var(--font-loader-mono), ui-monospace, monospace" }}
-            >
-              {suffixPart}
+            <span className="text-muted break-words">{codePart}</span>
+            <span className="text-xl sm:text-2xl md:text-3xl font-semibold tracking-tight text-ink">
+              {logoPart}
             </span>
-          )}
-          <span
-            className="text-muted"
-            style={{ fontFamily: "var(--font-loader-mono), ui-monospace, monospace" }}
-          >
-            {closeQuote}
-          </span>
-          <span
-            className={`inline-block w-2 h-[0.85em] ml-0.5 bg-accent align-middle transition-opacity duration-75 ${
-              cursorOn ? "opacity-100" : "opacity-0"
-            }`}
-            style={{ minHeight: "1em", fontFamily: "var(--font-loader-mono), ui-monospace, monospace" }}
-          />
+            {showSuffix && (
+              <span className="text-xl sm:text-2xl md:text-3xl font-semibold tracking-tight text-accent animate-loaderFadeIn">
+                {suffixPart}
+              </span>
+            )}
+            <span className="text-muted">{closeQuote}</span>
+            <span
+              className={`inline-block w-1.5 sm:w-2 h-[0.85em] ml-0.5 bg-accent align-middle transition-opacity duration-75 ${
+                cursorOn ? "opacity-100" : "opacity-0"
+              }`}
+              style={{ minHeight: "1em" }}
+            />
           </div>
         </div>
       </div>
