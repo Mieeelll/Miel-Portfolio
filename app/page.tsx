@@ -284,14 +284,12 @@ export default function Home() {
           {PROJECTS.map((project, i) => (
             <Reveal
               key={project.title}
-              className={`group project-item-hover grid grid-cols-1 tablet:grid-cols-[4rem_1fr_auto_auto] lg:grid-cols-[5rem_1fr_auto_auto] items-start tablet:items-center gap-3 tablet:gap-6 lg:gap-8 py-6 tablet:py-8 border-b border-border relative ${i ? "[transition-delay:100ms]" : ""}`}
+              tabIndex={0}
+              className={`group project-item-hover overflow-hidden outline-none focus-visible:ring-2 focus-visible:ring-accent/40 focus-visible:ring-offset-2 focus-visible:ring-offset-paper grid grid-cols-1 tablet:grid-cols-[1fr_auto_auto] items-start tablet:items-center gap-3 tablet:gap-6 lg:gap-8 py-6 tablet:py-8 border-b border-border relative ${i ? "[transition-delay:100ms]" : ""}`}
               data-project-item
             >
-              <span className="font-bebas text-lg tablet:text-xl text-border transition-colors group-hover:text-accent relative z-[1] tablet:order-1">
-                {project.num}
-              </span>
-              <div className="relative z-[1] min-w-0 tablet:order-2">
-                <h3 className="font-bebas text-xl sm:text-2xl tablet:text-3xl tracking-wide leading-none mb-1 transition-colors group-hover:text-accent">
+              <div className="relative z-[1] min-w-0 tablet:order-1">
+                <h3 className="font-bebas text-xl sm:text-2xl tablet:text-3xl tracking-wide leading-none mb-1 transition-colors supports-[hover:hover]:group-hover:text-accent group-active:text-accent group-focus-visible:text-accent">
                   {project.title}
                 </h3>
                 <p className="text-[0.75rem] sm:text-[0.82rem] text-muted">{project.desc}</p>
@@ -310,13 +308,13 @@ export default function Home() {
                 {project.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="text-[0.65rem] tracking-[0.1em] uppercase py-1 px-2 border border-border text-muted transition-colors group-hover:border-accent group-hover:text-accent"
+                    className="text-[0.65rem] tracking-[0.1em] uppercase py-1 px-2 border border-border text-muted transition-colors supports-[hover:hover]:group-hover:border-accent supports-[hover:hover]:group-hover:text-accent group-active:border-accent group-active:text-accent group-focus-visible:border-accent group-focus-visible:text-accent"
                   >
                     {tag}
                   </span>
                 ))}
               </div>
-              <span className="text-xl tablet:text-2xl text-border transition-all relative z-[1] group-hover:text-accent group-hover:translate-x-1 group-hover:-translate-y-1 tablet:order-4">
+              <span className="text-xl tablet:text-2xl text-border transition-all relative z-[1] supports-[hover:hover]:group-hover:text-accent supports-[hover:hover]:group-hover:translate-x-1 supports-[hover:hover]:group-hover:-translate-y-1 group-active:text-accent group-active:translate-x-1 group-active:-translate-y-1 group-focus-visible:text-accent group-focus-visible:translate-x-1 group-focus-visible:-translate-y-1 tablet:order-3">
                 ↗
               </span>
             </Reveal>

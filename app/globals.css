@@ -93,9 +93,15 @@ body::before {
 /* Project item hover bg */
 .project-item-hover::before {
   content: "";
-  @apply absolute inset-0 -right-16 bg-cream opacity-0 transition-opacity duration-200 z-0;
+  @apply absolute inset-0 bg-cream opacity-0 transition-opacity duration-200 z-0;
 }
-.project-item-hover:hover::before {
+@media (hover: hover) and (pointer: fine) {
+  .project-item-hover:hover::before {
+    @apply opacity-100;
+  }
+}
+.project-item-hover:active::before,
+.project-item-hover:focus-visible::before {
   @apply opacity-100;
 }
 
