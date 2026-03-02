@@ -93,11 +93,13 @@ body::before {
 /* Project item hover bg */
 .project-item-hover::before {
   content: "";
-  @apply absolute bg-cream opacity-0 transition-opacity duration-200 z-0;
-  /* Keep the hover panel inset from container edges on all resolutions */
-  inset: 10px clamp(10px, 1.6vw, 18px);
-  border-radius: 16px;
-  pointer-events: none;
+  @apply absolute bg-cream opacity-0 transition-opacity duration-200 z-0 pointer-events-none rounded-xl;
+  inset: 0.4rem;
+}
+@media (min-width: 640px) {
+  .project-item-hover::before {
+    inset: 0.5rem;
+  }
 }
 @media (hover: hover) and (pointer: fine) {
   .project-item-hover:hover::before {

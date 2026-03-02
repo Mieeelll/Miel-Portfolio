@@ -36,6 +36,12 @@ const LINKS = [
 function Nav() {
     const [scrolled, setScrolled] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const [mobileOpen, setMobileOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
+    const scrollToTop = ()=>{
+        if ("TURBOPACK compile-time truthy", 1) return;
+        //TURBOPACK unreachable
+        ;
+        const reduce = undefined;
+    };
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         const onScroll = ()=>setScrolled(window.scrollY > 60);
         window.addEventListener("scroll", onScroll);
@@ -58,7 +64,12 @@ function Nav() {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                         href: "#home",
                         className: "flex items-center gap-2 text-ink no-underline group min-h-[44px] min-w-[44px] items-center justify-start",
-                        onClick: ()=>setMobileOpen(false),
+                        onClick: (e)=>{
+                            // Keep href for fallback/deep-linking, but force a consistent "back to top".
+                            e.preventDefault();
+                            setMobileOpen(false);
+                            scrollToTop();
+                        },
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 className: "text-accent transition-transform group-hover:scale-110",
@@ -66,12 +77,12 @@ function Nav() {
                                     className: "w-5 h-5 sm:w-6 sm:h-6"
                                 }, void 0, false, {
                                     fileName: "[project]/components/Nav.tsx",
-                                    lineNumber: 45,
+                                    lineNumber: 57,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/Nav.tsx",
-                                lineNumber: 44,
+                                lineNumber: 56,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -82,13 +93,13 @@ function Nav() {
                                 children: "Miel"
                             }, void 0, false, {
                                 fileName: "[project]/components/Nav.tsx",
-                                lineNumber: 47,
+                                lineNumber: 59,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/Nav.tsx",
-                        lineNumber: 39,
+                        lineNumber: 46,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -101,17 +112,17 @@ function Nav() {
                                     children: label
                                 }, void 0, false, {
                                     fileName: "[project]/components/Nav.tsx",
-                                    lineNumber: 59,
+                                    lineNumber: 71,
                                     columnNumber: 15
                                 }, this)
                             }, href, false, {
                                 fileName: "[project]/components/Nav.tsx",
-                                lineNumber: 58,
+                                lineNumber: 70,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/components/Nav.tsx",
-                        lineNumber: 56,
+                        lineNumber: 68,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -125,33 +136,33 @@ function Nav() {
                                 className: `block w-5 h-0.5 bg-current transition-transform origin-center ${mobileOpen ? "rotate-45 translate-y-1" : ""}`
                             }, void 0, false, {
                                 fileName: "[project]/components/Nav.tsx",
-                                lineNumber: 78,
+                                lineNumber: 90,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 className: `block w-5 h-0.5 bg-current transition-opacity ${mobileOpen ? "opacity-0" : ""}`
                             }, void 0, false, {
                                 fileName: "[project]/components/Nav.tsx",
-                                lineNumber: 79,
+                                lineNumber: 91,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 className: `block w-5 h-0.5 bg-current transition-transform origin-center ${mobileOpen ? "-rotate-45 -translate-y-1" : ""}`
                             }, void 0, false, {
                                 fileName: "[project]/components/Nav.tsx",
-                                lineNumber: 80,
+                                lineNumber: 92,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/Nav.tsx",
-                        lineNumber: 71,
+                        lineNumber: 83,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/Nav.tsx",
-                lineNumber: 32,
+                lineNumber: 39,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -167,22 +178,22 @@ function Nav() {
                                 children: label
                             }, void 0, false, {
                                 fileName: "[project]/components/Nav.tsx",
-                                lineNumber: 94,
+                                lineNumber: 106,
                                 columnNumber: 15
                             }, this)
                         }, href, false, {
                             fileName: "[project]/components/Nav.tsx",
-                            lineNumber: 93,
+                            lineNumber: 105,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/components/Nav.tsx",
-                    lineNumber: 91,
+                    lineNumber: 103,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/Nav.tsx",
-                lineNumber: 85,
+                lineNumber: 97,
                 columnNumber: 7
             }, this)
         ]

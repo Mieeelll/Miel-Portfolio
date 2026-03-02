@@ -183,15 +183,15 @@ function Loader() {
         className: `fixed inset-0 z-[10000] flex items-center justify-center bg-paper transition-opacity duration-500 ${visible ? "opacity-100" : "opacity-0 pointer-events-none"}`,
         "aria-hidden": true,
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "px-6 max-w-[90vw] overflow-x-auto",
+            className: "w-full px-4 sm:px-6",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex items-center gap-3 md:gap-4",
+                className: "mx-auto w-full max-w-[980px] flex items-center justify-center gap-3 sm:gap-4",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                         className: "text-accent shrink-0",
                         "aria-hidden": true,
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$LogoIcon$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                            className: "w-8 h-8 md:w-10 md:h-10"
+                            className: "w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10"
                         }, void 0, false, {
                             fileName: "[project]/components/Loader.tsx",
                             lineNumber: 70,
@@ -203,62 +203,52 @@ function Loader() {
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex items-baseline flex-wrap gap-0 text-lg md:text-xl",
+                        className: "flex flex-wrap items-baseline justify-center gap-x-1 gap-y-1 text-xs sm:text-sm md:text-base leading-tight text-center min-w-0",
+                        style: {
+                            fontFamily: "var(--font-loader-mono), ui-monospace, monospace"
+                        },
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "text-muted",
-                                style: {
-                                    fontFamily: "var(--font-loader-mono), ui-monospace, monospace"
-                                },
+                                className: "text-muted break-words",
                                 children: codePart
                             }, void 0, false, {
                                 fileName: "[project]/components/Loader.tsx",
-                                lineNumber: 73,
-                                columnNumber: 11
+                                lineNumber: 76,
+                                columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "text-3xl md:text-4xl font-medium tracking-tight text-ink",
-                                style: {
-                                    fontFamily: "var(--font-loader-mono), ui-monospace, monospace"
-                                },
+                                className: "text-xl sm:text-2xl md:text-3xl font-semibold tracking-tight text-ink",
                                 children: logoPart
                             }, void 0, false, {
                                 fileName: "[project]/components/Loader.tsx",
-                                lineNumber: 79,
-                                columnNumber: 11
+                                lineNumber: 77,
+                                columnNumber: 13
                             }, this),
                             showSuffix && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "text-3xl md:text-4xl font-medium tracking-tight text-accent animate-loaderFadeIn",
-                                style: {
-                                    fontFamily: "var(--font-loader-mono), ui-monospace, monospace"
-                                },
+                                className: "text-xl sm:text-2xl md:text-3xl font-semibold tracking-tight text-accent animate-loaderFadeIn",
                                 children: suffixPart
+                            }, void 0, false, {
+                                fileName: "[project]/components/Loader.tsx",
+                                lineNumber: 81,
+                                columnNumber: 15
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "text-muted",
+                                children: closeQuote
+                            }, void 0, false, {
+                                fileName: "[project]/components/Loader.tsx",
+                                lineNumber: 85,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: `inline-block w-1.5 sm:w-2 h-[0.85em] ml-0.5 bg-accent align-middle transition-opacity duration-75 ${cursorOn ? "opacity-100" : "opacity-0"}`,
+                                style: {
+                                    minHeight: "1em"
+                                }
                             }, void 0, false, {
                                 fileName: "[project]/components/Loader.tsx",
                                 lineNumber: 86,
                                 columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "text-muted",
-                                style: {
-                                    fontFamily: "var(--font-loader-mono), ui-monospace, monospace"
-                                },
-                                children: closeQuote
-                            }, void 0, false, {
-                                fileName: "[project]/components/Loader.tsx",
-                                lineNumber: 93,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: `inline-block w-2 h-[0.85em] ml-0.5 bg-accent align-middle transition-opacity duration-75 ${cursorOn ? "opacity-100" : "opacity-0"}`,
-                                style: {
-                                    minHeight: "1em",
-                                    fontFamily: "var(--font-loader-mono), ui-monospace, monospace"
-                                }
-                            }, void 0, false, {
-                                fileName: "[project]/components/Loader.tsx",
-                                lineNumber: 99,
-                                columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {

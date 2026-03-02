@@ -285,7 +285,7 @@ export default function Home() {
             <Reveal
               key={project.title}
               tabIndex={0}
-              className={`group project-item-hover overflow-hidden outline-none focus-visible:ring-2 focus-visible:ring-accent/40 focus-visible:ring-offset-2 focus-visible:ring-offset-paper grid grid-cols-1 tablet:grid-cols-[1fr_auto_auto] items-start tablet:items-center gap-3 tablet:gap-6 lg:gap-8 py-6 tablet:py-8 border-b border-border relative ${i ? "[transition-delay:100ms]" : ""}`}
+              className={`group project-item-hover rounded-xl outline-none focus-visible:ring-2 focus-visible:ring-accent/40 focus-visible:ring-offset-2 focus-visible:ring-offset-paper grid grid-cols-1 tablet:grid-cols-[1fr_auto_auto] items-start tablet:items-center gap-3 tablet:gap-6 lg:gap-8 px-4 sm:px-5 tablet:px-6 py-6 tablet:py-8 border-b border-border relative ${i ? "[transition-delay:100ms]" : ""}`}
               data-project-item
             >
               <div className="relative z-[1] min-w-0 tablet:order-1">
