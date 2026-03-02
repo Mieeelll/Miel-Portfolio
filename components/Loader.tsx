@@ -12,7 +12,7 @@ const CURSOR_BLINK_MS = 530;
 const MIN_DISPLAY_MS = 1800;
 
 export default function Loader() {
-  const [visible, setVisible] = useState(true);
+  const [visible, setVisible] = useState<boolean | null>(true);
   const [step, setStep] = useState(0);
   const [cursorOn, setCursorOn] = useState(true);
   const { setLoading } = useLoading();
