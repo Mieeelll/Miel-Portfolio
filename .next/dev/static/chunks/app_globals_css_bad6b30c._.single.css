@@ -558,6 +558,10 @@ body {
   height: 1px;
 }
 
+.h-3\.5 {
+  height: .875rem;
+}
+
 .min-h-\[1\.5em\] {
   min-height: 1.5em;
 }
@@ -648,6 +652,10 @@ body {
 
 .w-max {
   width: max-content;
+}
+
+.w-3\.5 {
+  width: .875rem;
 }
 
 .min-w-0 {
@@ -1026,6 +1034,11 @@ body {
 
 .bg-transparent {
   background-color: #0000;
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
 .bg-name-gradient {

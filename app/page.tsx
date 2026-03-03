@@ -370,7 +370,14 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 no-underline text-ink text-[0.85rem] tracking-wide transition-colors pb-6 border-b border-border hover:text-accent"
               >
-                <span className="w-6 text-base">in</span>
+                <span className="w-6 h-6 flex items-center justify-center">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
+                    alt="LinkedIn"
+                    className="w-5 h-5 object-contain"
+                  />
+                </span>
                 <span>linkedin.com/in/amiel-metiam</span>
               </a>
               <a
@@ -379,7 +386,14 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 no-underline text-ink text-[0.85rem] tracking-wide transition-colors pb-6 border-b border-border hover:text-accent"
               >
-                <span className="w-6 text-base">gh</span>
+                <span className="w-6 h-6 flex items-center justify-center rounded-full bg-white border border-border">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                    alt="GitHub"
+                    className="w-4 h-4 object-contain"
+                  />
+                </span>
                 <span>github.com/Mieeelll</span>
               </a>
             </div>
