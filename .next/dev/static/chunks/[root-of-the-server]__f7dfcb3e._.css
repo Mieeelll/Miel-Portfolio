@@ -1349,6 +1349,10 @@ body {
   background-color: #1a1a1a80;
 }
 
+.bg-cream\/60 {
+  background-color: #1a1a1a99;
+}
+
 .bg-cream\/80 {
   background-color: #1a1a1acc;
 }
@@ -2360,6 +2364,11 @@ body:before {
     padding-right: 1rem;
   }
 
+  .sm\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
   .sm\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -2383,11 +2392,6 @@ body:before {
   .sm\:py-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
-  }
-
-  .sm\:px-5 {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
   }
 
   .sm\:pb-16 {
@@ -2603,6 +2607,10 @@ body:before {
     align-items: center;
   }
 
+  .tablet\:justify-end {
+    justify-content: flex-end;
+  }
+
   .tablet\:gap-12 {
     gap: 3rem;
   }
@@ -2640,6 +2648,11 @@ body:before {
     padding-right: 2.5rem;
   }
 
+  .tablet\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
   .tablet\:py-20 {
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -2658,11 +2671,6 @@ body:before {
   .tablet\:py-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
-  }
-
-  .tablet\:px-6 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
   }
 
   .tablet\:pl-6 {

@@ -8,6 +8,7 @@ import HeroFadeInWrapper from "@/components/HeroFadeInWrapper";
 import TypingTagline from "@/components/TypingTagline";
 import OverviewCodeBlock from "@/components/OverviewCodeBlock";
 import LogoIcon from "@/components/LogoIcon";
+import BackToTopButton from "@/components/BackToTopButton";
 
 const SKILLS = [
   {
@@ -391,7 +392,10 @@ export default function Home() {
 
       <footer className="bg-paper text-muted py-6 sm:py-8 px-4 sm:px-6 tablet:px-10 lg:px-16 flex flex-col tablet:flex-row justify-between items-center gap-4 border-t border-border text-[0.7rem] sm:text-[0.75rem] tracking-[0.08em] text-center tablet:text-left">
         <span>© {new Date().getFullYear()} Amiel John Metiam. All rights reserved.</span>
-        <span>Built with care ✦</span>
+        <div className="flex flex-wrap items-center justify-center tablet:justify-end gap-3">
+          <span>Built with care ✦</span>
+          <BackToTopButton />
+        </div>
       </footer>
     </>
   );
