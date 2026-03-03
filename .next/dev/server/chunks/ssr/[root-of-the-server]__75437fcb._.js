@@ -202,7 +202,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$BodyWithLoading$2e$ts
 ;
 ;
 const metadata = {
-    title: "Portfolio — Amiel John Metiam",
+    title: "Amiel Metiam",
     description: "Amiel John Metiam — Web & Mobile Developer, QA. Building meaningful software with React, Node.js, Flutter."
 };
 function RootLayout({ children }) {

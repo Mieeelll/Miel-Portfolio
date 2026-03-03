@@ -35,7 +35,7 @@ const permanentMarker = Permanent_Marker({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio — Amiel John Metiam",
+  title: "Amiel Metiam",
   description:
     "Amiel John Metiam — Web & Mobile Developer, QA. Building meaningful software with React, Node.js, Flutter.",
 };
